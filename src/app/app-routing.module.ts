@@ -8,7 +8,7 @@ import { TweetComponent } from './tweet/tweet.component';
 import { InformativeComponent } from './informative/informative.component';
 
 const routes: Routes = [
-  { path:'accessment', component:AssessmentComponent },
+  { path:'assessment', component:AssessmentComponent },
   {path:'',component:HomeComponent},
   {path:'index',component:IndexComponent },
   {path:'result',component:ResultComponent},

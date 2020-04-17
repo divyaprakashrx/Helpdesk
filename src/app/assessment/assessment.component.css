@@ -1,0 +1,51 @@
+h2{
+    line-height: 1.5;
+}
+.btntrue,.btnfalse{
+    border-radius: 18px;
+    border-width:2px 2px 2px 2px;
+    border-color: black;
+    padding: 5px 23px 5px 23px;
+    box-shadow: 0px 0px 3px;
+}
+.btntrue:hover{
+    color:white;
+    border-width:2px 2px 2px 2px;
+    border-radius: 18px;
+    padding: 5px 23px 5px 23px;
+    background-color: green;
+    border-color:green;
+    transition: 0.1s ease-in;
+}
+.btnfalse:hover{
+    color:white;
+    border-width:2px 2px 2px 2px;
+    border-radius: 18px;
+    padding: 5px 23px 5px 23px;
+    background-color: red;
+    border-color:red;
+    transition: 0.1s ease-in;
+}
+.submit{
+    font-size: 1.5rem;
+    color:white;
+    padding:15px 30px 15px 30px;
+    border-radius:20px;
+    border-width:0px;
+    background-color: green;
+}
+.submit:hover{
+    font-size: 1.5rem;
+    color:white;
+    padding:15px 30px 15px 30px;
+    border-radius:20px;
+    border-width:0px;
+    background-color: green;
+    text-shadow: 0px 0px 3px;
+}
+.docimg{
+    position: absolute;
+    bottom:0;
+    z-index:0;
+    float:right;
+}
