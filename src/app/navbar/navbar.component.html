@@ -14,7 +14,7 @@
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
-    <mat-toolbar color="primary">
+    <mat-toolbar style="background-color:#0094FF">
       <button
         type="button"
         aria-label="Toggle sidenav"
@@ -24,6 +24,12 @@
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
       <span>HackOn</span>
+      <span style="flex:1 1 auto"></span>
+    <a *ngIf="!(isHandset$ | async)" mat-list-item routerLink="/" routerLinkActive="active">Home</a>
+    <a *ngIf="!(isHandset$ | async)" mat-list-item routerLink="/index" routerLinkActive="active">Assessment</a>
+    <a *ngIf="!(isHandset$ | async)" mat-list-item routerLink="/tweet" routerLinkActive="active">Tweets</a>
+   <a *ngIf="!(isHandset$ | async)" mat-list-item routerLink="/inform" routerLinkActive="active">Information</a>
+    <a *ngIf="!(isHandset$ | async)" mat-list-item routerLink="/assessment" routerLinkActive="active">Quiz</a>
     </mat-toolbar>
     <router-outlet></router-outlet>
   </mat-sidenav-content>
