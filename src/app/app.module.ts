@@ -17,6 +17,8 @@ import { IndexComponent } from './index/index.component';
 import { ResultComponent } from './result/result.component';
 import { InformativeComponent } from './informative/informative.component';
 import { TweetComponent } from './tweet/tweet.component';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [
@@ -38,7 +40,8 @@ import { TweetComponent } from './tweet/tweet.component';
     MatButtonModule,
     MatSidenavModule,
     MatIconModule,
-    MatListModule
+    MatListModule,
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [],
   bootstrap: [AppComponent]
