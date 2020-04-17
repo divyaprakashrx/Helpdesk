@@ -13,13 +13,21 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
+import { IndexComponent } from './index/index.component';
+import { ResultComponent } from './result/result.component';
+import { InformativeComponent } from './informative/informative.component';
+import { TweetComponent } from './tweet/tweet.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     AssessmentComponent,
-    NavbarComponent
+    NavbarComponent,
+    IndexComponent,
+    ResultComponent,
+    InformativeComponent,
+    TweetComponent
   ],
   imports: [
     BrowserModule,
