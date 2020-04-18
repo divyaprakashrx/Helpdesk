@@ -24,6 +24,8 @@
       </button>
       <img src="assets/COVID-19.png" routerLink="/" class="img-fluid" style="max-height:50px;margin-left: 7vh;" >
       <span style="flex:1 1 auto"></span>
+          <a *ngIf="!(isHandset$ | async)" class="link" routerLink="/" routerLinkActive="active">Home</a>
+
     <a *ngIf="!(isHandset$ | async)" class="link" routerLink="/index" routerLinkActive="active">Assessment</a>
     <a *ngIf="!(isHandset$ | async)" class="link" routerLink="/tweet" routerLinkActive="active">Tweets</a>
    <a *ngIf="!(isHandset$ | async)"  class="link"routerLink="/inform" routerLinkActive="active">Information</a>
