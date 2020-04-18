@@ -9,7 +9,6 @@
       <a mat-list-item routerLink="/index" routerLinkActive="active">Assessment</a>
       <a mat-list-item routerLink="/tweet" routerLinkActive="active">Tweets</a>
      <a mat-list-item routerLink="/inform" routerLinkActive="active">Information</a>
-    <a mat-list-item routerLink="/assessment" routerLinkActive="active">Quiz</a>
 
     </mat-nav-list>
   </mat-sidenav>
@@ -23,13 +22,11 @@
         *ngIf="isHandset$ | async">
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
-      <span>HackOn</span>
+      <img src="assets/COVID-19.png" routerLink="/" class="img-fluid" style="max-height:50px;margin-left: 7vh;" >
       <span style="flex:1 1 auto"></span>
-    <a *ngIf="!(isHandset$ | async)" mat-list-item routerLink="/" routerLinkActive="active">Home</a>
-    <a *ngIf="!(isHandset$ | async)" mat-list-item routerLink="/index" routerLinkActive="active">Assessment</a>
-    <a *ngIf="!(isHandset$ | async)" mat-list-item routerLink="/tweet" routerLinkActive="active">Tweets</a>
-   <a *ngIf="!(isHandset$ | async)" mat-list-item routerLink="/inform" routerLinkActive="active">Information</a>
-    <a *ngIf="!(isHandset$ | async)" mat-list-item routerLink="/assessment" routerLinkActive="active">Quiz</a>
+    <a *ngIf="!(isHandset$ | async)" class="link" routerLink="/index" routerLinkActive="active">Assessment</a>
+    <a *ngIf="!(isHandset$ | async)" class="link" routerLink="/tweet" routerLinkActive="active">Tweets</a>
+   <a *ngIf="!(isHandset$ | async)"  class="link"routerLink="/inform" routerLinkActive="active">Information</a>
     </mat-toolbar>
     <router-outlet></router-outlet>
   </mat-sidenav-content>

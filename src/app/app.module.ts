@@ -19,6 +19,7 @@ import { InformativeComponent } from './informative/informative.component';
 import { TweetComponent } from './tweet/tweet.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -41,6 +42,7 @@ import { environment } from '../environments/environment';
     MatSidenavModule,
     MatIconModule,
     MatListModule,
+    FormsModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [],

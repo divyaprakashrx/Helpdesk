@@ -1,14 +1,13 @@
 <body style="height: 100%">
     <div class="row" style="margin-top:10vh;">
     <div class="col-md-3 x" style="padding: 0;">
-<button class="btn active">Overview</button><br>
-<button class="btn">Symptoms</button><br>
-<button class="btn">Prevention</button><br>
-<button class="btn">Treatment</button><br>
-<button class="btn">Statistics</button><br>
+<button class="btn" (click)="name('overview')">Overview</button><br>
+<button class="btn" (click)="name('symptoms')">Symptoms</button><br>
+<button class="btn" (click)="name('prevention')">Prevention</button><br>
+<button class="btn" (click)="name('treatment')">Treatment</button><br>
     </div>
     <div class="main-content col-md-6">
-        <h2 class="content">
+        <h2 class="content" *ngIf="value==='overview'">
             Severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) is the virus strain that causes coronavirus
             disease 2019 (COVID-19), a respiratory illness. It is colloquially known as the coronavirus, and was
             previously referred to by its provisional name 2019 novel coronavirus (2019-nCoV). SARS-CoV-2 is a
@@ -21,7 +20,42 @@
             both SARS-CoV-2 and the disease it causes "coronavirus", but scientists typically use more precise
             terminology.
         </h2>
-
+        <h2 class="content" *ngIf="value==='symptoms'">
+            The COVID-19 virus affects different people in different ways. Most infected people will develop mild to moderate
+        symptoms.<br>Common symptoms:<ul>
+            <li>fever</li>
+            <li>tiredness</li>
+            <li>dry cough</li>
+        </ul><br>Some people may experience:<br>
+        <ul>
+            <li>aches and pains.</li>
+            <li>nasal congestion.</li>
+            <li>runny nose.</li>
+            <li>sore throat.</li>
+            <li>diarrhoea.</li>
+        </ul><br>On average it takes 5–6 days from when someone is infected with the virus for symptoms to show, however it can
+        take up to 14 days.<br>People with mild symptoms who are otherwise healthy should self-isolate. Seek medical attention
+        if you have a fever, acough, and difficulty breathing. Call ahead</h2>
+        <h2 class="content" *ngIf="value==='prevention'">Protect yourself and others around you by knowing the facts and taking appropriate precautions. Follow advice provided
+        by your local public health agency.<br>To prevent the spread of COVID-19:<br>
+        <ul>
+            <li>Clean your hands often. Use soap and water, or an alcohol-based hand rub.</li>
+            <li>Maintain a safe distance from anyone who is coughing or sneezing.</li>
+            <li>Don’t touch your eyes, nose or mouth.</li>
+            <li>Cover your nose and mouth with your bent elbow or a tissue when you cough or sneeze.</li>
+            <li>Stay home if you feel unwell.</li>
+            <li>If you have a fever, a cough and difficulty breathing, seek medical attention. Call in advance.</li>
+            <li>Follow the directions of your local health authority.</li>
+        </ul><br>Avoiding unneeded visits to medical facilities allows healthcare systems to operate more effectively, therefore
+        protecting you and others.</h2>
+        <h2 class="content" *ngIf="value==='treatment'">To date, there are no specific vaccines or medicines for COVID-19.<br>Treatments are under investigation, and will be
+        tested through clinical trials.<br>Self-care<br>If you feel sick you should rest, drink plenty of fluid, and eat
+        nutritious food. Stay in a separate room from other family members, and use a dedicated bathroom if possible. Clean and
+        disinfect frequently touched surfaces.<br>Everyone should keep a healthy lifestyle at home. Maintain a healthy diet,
+        sleep, stay active, and make social contact with loved ones through the phone or internet. Children need extra love and
+        attention from adults during difficult times. Keep to regular routines and schedules as much as possible.<br>It is
+        normal to feel sad, stressed, or confused during a crisis. Talking to people you trust, such as friends and family, can
+        help. If you feel overwhelmed, talk to a health worker or counsellor.</h2>
 
     </div>
             <div class="col-md-3"><img src="assets/COVID-19.png" class="img-fluid"></div>
