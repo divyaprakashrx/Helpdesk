@@ -50,3 +50,17 @@ h2{
     z-index:0;
     max-height:90vh;
 }
+
+@media(max-width:1024px){
+    #pic{
+        display: none;
+    }
+    #te{
+        background-color: #E8961C;
+        width: 100vw;
+    }
+    #modal{
+                background-color: #E8961C;
+;
+    }
+}
